@@ -1,14 +1,14 @@
 body
 {
     margin:0;
-  
+    background-color:#fafafa; 
 }
 
 #header
 {
     
 display: flex;
-border-bottom: 2px solid #444444;
+border-bottom: 2px solid #b9b9b9;
 
 align-items: center;
 
@@ -20,25 +20,28 @@ justify-content: space-between;
 {
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid #b9b9b9;
     
 }
 
 #main
 {     width: 1000px;
-    
+    background-color:#fafafa;
     margin-left: auto;
     margin-right: auto;
 }
 
+
+
 #text1
 {
     text-align:center;
-    width: 400px;
+    width: 450px;
 }
 #text2
 {
     text-align:center;
-    width: 400px;
+    width: 450px;
 }
 #circles
 {  
@@ -72,4 +75,17 @@ justify-content: space-between;
     border-radius: 50%;
     opacity: 0.7;
     margin-left: -30px;
+}
+
+#buildbw
+{
+
+}
+
+#footer {
+    background-color: #232d2f;
+    background-image: url(zabek.jpg);
+    background-repeat: repeat-x;
+    margin-top: 40px;
+    height: 200px;
 }
