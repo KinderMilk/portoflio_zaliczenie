@@ -3,7 +3,12 @@ body
     margin:0;
     background-color:#fafafa; 
 }
-
+#header a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+}
 #header
 {
     
@@ -14,6 +19,7 @@ align-items: center;
 
 
 justify-content: space-between;
+margin-bottom: 20px;
 
 }
 #columns
@@ -21,6 +27,7 @@ justify-content: space-between;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #b9b9b9;
+    margin-bottom: 20px;
     
 }
 
