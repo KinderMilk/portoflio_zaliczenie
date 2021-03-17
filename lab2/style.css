@@ -1,20 +1,42 @@
 body
 {
     margin:0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  
 }
 
 #header
 {
+    
 display: flex;
 border-bottom: 2px solid #444444;
-width:100%;
+
 align-items: center;
 
+
+justify-content: space-between;
+
 }
-#containers
+#columns
 {
     display: flex;
+    justify-content: space-between;
+    
+}
+
+#main
+{     width: 1000px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#text1
+{
+    text-align:center;
+    width: 400px;
+}
+#text2
+{
+    text-align:center;
+    width: 400px;
 }
