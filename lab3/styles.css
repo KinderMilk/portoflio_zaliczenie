@@ -1,0 +1,45 @@
+body
+{
+    background-color: #15222a;
+    margin:0;
+}
+.header
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.board
+
+{
+    background-color: white;
+     display: flex;
+    width: 440px;
+    
+    margin-top: 5%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+   
+}
+.image
+{
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-board
+
+{  
+    color: aliceblue;
+     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:440px;
+}
+.Title
+{   
+    text-align: center;
+    justify-content: center;
+}
