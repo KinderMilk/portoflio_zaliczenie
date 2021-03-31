@@ -31,8 +31,8 @@ body
 }
 .text-board
 
-{  
-    color: aliceblue;
+{  font-family: arial;
+    color:#cbd6df;
      justify-content: center;
     margin-left: auto;
     margin-right: auto;
