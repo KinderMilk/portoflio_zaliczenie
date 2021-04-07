@@ -1,0 +1,53 @@
+
+body
+{
+    margin: 0;
+}
+main
+
+{
+
+    width:150px;
+    height: 100%;
+    background-color: #252a3a;
+    font-size: 16px;
+    color: white;
+
+}
+
+.compose_button
+{
+    position: relative;
+    
+    background-color: #1B98F8;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80px;
+    
+    margin: 16px;
+    
+    
+}
+.menu_links
+{
+
+    padding-left: 16px;
+    padding-bottom: 5px;
+
+}
+section
+{
+
+display: flex;
+flex-direction: column;
+width: 350px;
+height: 100%;
+
+}
+.maile
+{
+
+margin: 14px 16px;
+
+}
