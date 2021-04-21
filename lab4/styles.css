@@ -3,17 +3,86 @@ body
 {
     margin: 0;
     font-family: sans-serif;
+    
 }
+
 
 main
 {
 
-   /* width:150px;*/
-    height: 100%;
+    width:100%;
+    
+    font-size: 12px;
     background-color: #252a3a;
-    font-size: 16px;
+    
     color: white;
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "maile"
+    "mail"           
+    ;
    
+
+}
+.menus
+{
+    margin: 10px  ;
+    padding-left: 4px;
+}
+#lab
+{
+    padding-left: 9px;
+    color: #406487;
+    margin-bottom: 6px;
+}
+.labels
+{
+    margin-left: 10px;
+}
+.labele
+{
+
+    margin-bottom: 25px;
+}
+.mail_opened
+{
+display: grid;
+margin-left: 15px;
+margin-right: 15px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 100px auto ;
+
+
+}
+#h2title
+{
+
+    font-size: 20px;
+    
+    grid-column-end: 2;
+}
+#mailowe_buttony
+{
+    grid-column-start:2 ;
+}
+.text
+{
+
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+@media screen and (min-width: 639px)
+{
+main{
+
+    width:150px;
+    font-size: 16px;
+    height: 100%;
+
+}
+
 
 }
 
@@ -36,7 +105,7 @@ main
 .menu_links
 {
 
-    padding-left: 16px;
+    
     padding-bottom: 5px;
 
 }
@@ -53,7 +122,7 @@ height: 100%;
 {
    
 
-display: flex;
+display: grid;
 flex-direction: column;
 }
 .ramkawiad
@@ -75,11 +144,7 @@ border-radius:3px;
 margin-right: 8px;
 }
 
-.mail_opened h2
-{
-font-size: 32px;
-color: black;
-}
+
 .ramkawiad a
 {
     text-decoration: none;
