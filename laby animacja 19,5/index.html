@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
-    <script>
-        function mouseOver()
-        {
-            document.getElementById("bartek").classList.add("animowanybartek")
-        }
-    </script>
+    
+       
+       
+        
+   
 </head>
 <body>
+    
     <div class="background">
         <div class="navigation">sidebar</div> 
         <div class="container">
@@ -30,6 +30,7 @@
                     <div class="button" id="button7">button7</div>  
                     <div class="button" id="button8">button8</div>
                     <img class="bartek" id="bartek" src="photo_2021-05-18_14-50-31.jpg">
+                    <p id="licznik">0</p>
 
 
                 </div>           
@@ -40,6 +41,28 @@
 
         </div> 
     </div>
-    
+    <script>
+
+            
+const test = document.querySelector('#button8');
+const barek = document.querySelector("#bartek");
+const naww = document.querySelector(".navigation");
+const button1 = document.querySelector('#button1');
+
+function sluchacz()
+{
+
+
+    barek.className="animowanybartek";
+   
+ 
+}
+function nawigacz(){naww.className="navvv";}
+test.onclick = function() {sluchacz()};
+button1.onclick = function(){nawigacz();}
+
+
+
+         </script> 
 </body>
 </html>

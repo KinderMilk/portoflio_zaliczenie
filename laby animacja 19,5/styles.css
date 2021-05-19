@@ -69,7 +69,26 @@ align-items: center;
     top:-100vh;
     animation-name: bartekk;
     animation-duration: 2s;
+    animation-fill-mode: forwards;
 
+}
+.animowanynav
+{ 
+    position: absolute;
+    width: 500px;
+    height: 100vh;
+    background-color: green;
+    
+    
+    animation-name: navvv;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes navvv 
+{
+    from{left:-250px;}
+    to{left: 500px;}
+    
 }
 @keyframes bartekk
 {
