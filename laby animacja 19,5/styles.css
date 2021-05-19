@@ -29,9 +29,51 @@ body{ margin:0 0;
 }
 .contener
 {
+    
+
     height: 100vh;
+
 }
 .realcontener
 {
-  top:-30vh;
+    width: 198vh;
+    height: 100vh;
+    position: flex;
+    background-color: blanchedalmond;
+  top:100px;
+}
+.menu
+{
+display: flex;
+align-items: center;
+
+}
+.button 
+{
+    
+    background-color: green;
+    margin: 10px;
+}
+#button8:hover
+{
+  
+    
+   
+    background-color: aquamarine;
+}
+.animowanybartek
+{
+    position:absolute;
+    top: 0;
+    height: 100vh;
+    top:-100vh;
+    animation-name: bartekk;
+    animation-duration: 2s;
+
+}
+@keyframes bartekk
+{
+    from{top:-100vh}
+    to{transform: translateY(500px)}
+    
 }
