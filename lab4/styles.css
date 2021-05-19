@@ -179,9 +179,9 @@ align-self: center;
 {
  body
  {
-     
+width: 100%;
 display: grid;
-grid-template-columns: 12% 30% 1fr;
+grid-template-columns: 1fr 2fr 6fr;
 
  }
  section{display: grid;}
@@ -200,7 +200,7 @@ grid-column-end: 2;
  .mail_opened
  {
 
-    width: 1000px;
+    width: 100%;
     grid-column-start:3 ;
  }
 

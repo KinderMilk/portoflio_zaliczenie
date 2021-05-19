@@ -1,0 +1,50 @@
+.anime
+{
+
+
+    position: absolute;
+    
+    width: 100px;
+    height: auto;
+}
+.obrazek
+{
+  
+    width: 300px;
+    height: auto;
+}
+
+#stary
+{ position: absolute;
+   
+    animation-name: animacja1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+}
+#mlody
+{ position: absolute;
+    animation-name: animacja2;
+    animation-duration: 23s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+ 
+
+}
+#jajco{ animation-duration: 2s;position: absolute;animation-name: animacja2;animation-iteration-count:infinite;}
+@keyframes animacja1 {
+    0%{transform:translateX(20px) ;}
+    50%{transform:translateX(-100px);}
+    75%{transform:translateX(20px) ;}
+    100%{transform: translateZ(-100px) perspective(200px);}
+   
+    
+    
+}
+@keyframes animacja2 {
+    0%{}
+    
+    100%{
+        transform: translateZ(10px) perspective(200px);}
+    
+}

@@ -1,0 +1,37 @@
+
+body{ margin:0 0;
+    padding: 0 0;
+    background-color: grey;}
+.background
+
+{
+    display:flex;
+   
+
+}
+.navigation
+{
+    position: absolute;
+    width:150px;
+    height: 100vh;
+    background-color: green;
+    left:-250px;
+   
+}
+.bartek
+{
+
+    position:absolute;
+    top: 0;
+    height: 100vh;
+    top:-100vh;
+
+}
+.contener
+{
+    height: 100vh;
+}
+.realcontener
+{
+  top:-30vh;
+}
