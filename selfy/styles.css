@@ -1,0 +1,26 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+#all
+{
+    padding: 8vh 6vh 8vh 6vh;
+    
+}
+#navigation
+{
+    background-color: #a5adb0;
+    border-bottom: 2px solid #cad2d7;
+    display: grid;
+    grid-template-columns: 200px 1fr 100px 100px 100px 100px 100px 100px;
+}
+#wrapper
+{
+   
+}
+#glowa
+{
+    position: absolute;
+    
+}
