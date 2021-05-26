@@ -12,21 +12,22 @@ li{
 }
 #all
 {
-    padding: 8vh 6vh 8vh 6vh;
+    padding: 10vh 10vh 0vh 10vh ;
     background-color: #a5adb0;
     
 }
 #navigation
 {
     background-color: #a5adb0;
-    border-bottom: 2px solid #cad2d7;
+    border-bottom: 1.5px solid #cad2d7;
     display: grid;
     grid-template-columns: 200px 1fr 100px 100px 100px 100px 100px 100px;
+    padding-bottom: 30px;
 }
 #logo img
 {
    
-    width: 200px;
+    width: 150px;
     height: auto;
     grid-column-start:1; 
     
@@ -72,10 +73,24 @@ li{
 
 #wrapper
 {
-   
+    display: grid;
+
+}
+#napisidiota
+{
+    display: grid;
+    align-items: center;    
 }
 #glowa
 {
-    position: absolute;
+   
+    width: 100vw;
     
+}
+#opisy
+{
+    display: grid;
+    background-color: rgb(243, 244, 245);
+    padding: 10vh;
+    grid-template-columns: 1fr 1fr 1fr;
 }
