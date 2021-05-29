@@ -85,7 +85,7 @@ grid-row-start:2;grid-column-start: 1;
 font-family: 'Roboto', sans-serif;
 font-size: 7vw;
 color: #fff;
-font-weight: normal;
+
 letter-spacing: -2px;
 }
 #idiotanapis
@@ -100,12 +100,16 @@ letter-spacing: -2px;
     grid-row-start:4;
     grid-column-start: 1;
     font-family: 'Roboto', sans-serif;
+    font-weight:bolder;
     color: #fff;
     font-size: 2.5vw;
 }
 #idiotareklama
 {
-    grid-row-start:6;grid-column-start: 1;font-family: 'Roboto', sans-serif;
+    grid-row-start:6;
+    grid-column-start: 1;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;font-size: 1.5vw;
 }
 
 #glowa
