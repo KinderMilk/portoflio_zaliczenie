@@ -71,20 +71,49 @@ li{
     background-color: antiquewhite;
 }
 
-#wrapper
+.napisidiota
 {
     display: grid;
+    align-items: center;   
+    
+    grid-template-columns: 50% 50%;
+    grid-template-rows:300px 8vw 4vw 4vw 40px 60px 300px ; 
+}
+#idiotaduzy
+{
+grid-row-start:2;grid-column-start: 1;
+font-family: 'Roboto', sans-serif;
+font-size: 7vw;
+color: #fff;
+font-weight: normal;
+letter-spacing: -2px;
+}
+#idiotanapis
+{
+    grid-row-start:3;grid-column-start: 1;
+    font-family: 'Roboto', sans-serif;
+    color: #e2e2e2;
+    font-size: 2vw;
+}
+#idiotaosoba
+{
+    grid-row-start:4;
+    grid-column-start: 1;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 2.5vw;
+}
+#idiotareklama
+{
+    grid-row-start:6;grid-column-start: 1;font-family: 'Roboto', sans-serif;
+}
 
-}
-#napisidiota
-{
-    display: grid;
-    align-items: center;    
-}
 #glowa
 {
-   
-    width: 100vw;
+    object-fit: cover;
+   grid-row-start:2 ;
+   grid-column-start: 1;
+   width: 50px;
     
 }
 #opisy
