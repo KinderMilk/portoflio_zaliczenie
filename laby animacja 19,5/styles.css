@@ -3,5 +3,9 @@ body
     perspective: 1000px;
 }
 #container{
+    height: 1000px;
+    width: 100%;
     position: absolute ;
+    background: red;
+    transform: rotateZ(0px);
 }

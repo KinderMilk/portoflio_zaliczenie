@@ -20,7 +20,12 @@
   
 
 
-        <script> const button1 = document.querySelector('button1')
+        <script> 
+        const button1 = document.querySelector('#button1');
+        const kontener = document.querySelector('#container');
+                    button1.addEventListener('click', event =>{
+                    kontener.style.transform ='translateZ(-300px)' ;
+                })
         </script> 
 </body>
 </html>
