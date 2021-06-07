@@ -18,27 +18,28 @@
     <script>
 
         const button = document.querySelector('#button');
-        const jeden =document.querySelector('.pole1');
-        const dwa =document.querySelector('.pole2');
-        var checker =1;
+        const jeden = document.querySelector('.pole1');
+        const dwa = document.querySelector('.pole2');
+        var checker = 1;
         button.addEventListener('click',event =>
         {
             
-            if(checker==1)
+            if(checker === 1)
             {
                 jeden.style.zIndex='110';
                 dwa.style.zIndex ='100';
                 jeden.style.animation = 'lewe 2s;';
                 dwa.style.animation = '';
-                checker=0;
+                
+               checker = 0;
             }
-            if(checker==0)
+            if(checker === 0)
             {
                 jeden.style.zIndex='100';
                 dwa.style.zIndex='110';
                 jeden.style.animation = '';
                 dwa.style.animation = 'prawe 2s';
-                checker=1;
+                checker =1;
             }
             console.log(checker);
             

@@ -12,57 +12,15 @@
    
 </head>
 <body>
-    
-    <div class="background">
-        <div class="navigation">sidebar</div> 
-        <div class="container">
-            
-            <div class="realcontener">
-                
-            <div class="napisgora">TRANZYCJE</div>              
-                <div class="menu">
-                    <div class="button" id="button1">button1</div>  
-                    <div class="button" id="button2">button2</div>  
-                    <div class="button" id="button3">button3</div>  
-                    <div class="button" id="button4">button4</div>  
-                    <div class="button" id="button5">button5</div>  
-                    <div class="button" id="button6">button6</div>  
-                    <div class="button" id="button7">button7</div>  
-                    <div class="button" id="button8">button8</div>
-                    <img class="bartek" id="bartek" src="photo_2021-05-18_14-50-31.jpg">
-                    <p id="licznik">0</p>
-
-
-                </div>           
-                    <div class="napisbok">napis bok</div>           
-                
-                
-            </div>
-
-        </div> 
+    <div id="container">
+    <div id="button1" class="button">button</div> 
+    <div id="button2" class="button">button</div>       
     </div>
-    <script>
-
-            
-const test = document.querySelector('#button8');
-const barek = document.querySelector("#bartek");
-const naww = document.querySelector(".navigation");
-const button1 = document.querySelector('#button1');
-
-function sluchacz()
-{
+    
+  
 
 
-    barek.className="animowanybartek";
-   
- 
-}
-function nawigacz(){naww.className="navvv";}
-test.onclick = function() {sluchacz()};
-button1.onclick = function(){nawigacz();}
-
-
-
-         </script> 
+        <script> const button1 = document.querySelector('button1')
+        </script> 
 </body>
 </html>
