@@ -1,11 +1,23 @@
 body
 {
-    perspective: 1000px;
+    
+    margin: 0;
+    perspective: 400px;
 }
 #container{
-    height: 1000px;
+    
+    height: 1000PX;
     width: 100%;
+    
     position: absolute ;
     background: red;
-    transform: rotateZ(0px);
+    transform: translateZ() ;
+}
+#nav
+{
+    
+    width:150px;
+    background-color: aquamarine;
+    height: 100%;
+
 }
