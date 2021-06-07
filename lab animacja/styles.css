@@ -1,50 +1,50 @@
-.anime
+body
 {
+    display:grid;
+    place-items: center;
+    height: 100%;
+    perspective: 1000px;
+}
 
 
+
+#button
+{
+    background: paleturquoise;
+    padding: 2em;
+}
+#button:hover{
+    opacity: 50%;
+}
+.pole1
+{
     position: absolute;
-    
-    width: 100px;
-    height: auto;
-}
-.obrazek
-{
-  
-    width: 300px;
-    height: auto;
-}
-
-#stary
-{ position: absolute;
-   
-    animation-name: animacja1;
-    animation-duration: 2s;
+    background: aqua;
+    left:35%;
+    animation: lewe 2s;
     animation-fill-mode: forwards;
-    animation-iteration-count:infinite;
+      z-index: 110;
+    
 }
-#mlody
-{ position: absolute;
-    animation-name: animacja2;
-    animation-duration: 23s;
-    animation-fill-mode:forwards;
-    animation-iteration-count:infinite;
- 
+.pole2
+{
+    position: absolute;
+    background: lavender;
+     
+    animation: praw 2s;
+    animation-fill-mode: forwards;
+    z-index: 100;
+    
+}
+@keyframes prawe {
+    0%{transform: translateX(0px);}
+     50%{transform: translateX(-80px);}
+     100%{transform: translateZ(150px) translateX(-80px);}
+}
+@keyframes lewe{
+    0%{transform: translateX(0px);}
+    50%{transform: translateX(80px);}
+    100%{transform: translateZ(150px) translateX(80px);}
 
 }
-#jajco{ animation-duration: 2s;position: absolute;animation-name: animacja2;animation-iteration-count:infinite;}
-@keyframes animacja1 {
-    0%{transform:translateX(20px) ;}
-    50%{transform:translateX(-100px);}
-    75%{transform:translateX(20px) ;}
-    100%{transform: translateZ(-100px) perspective(200px);}
-   
-    
-    
-}
-@keyframes animacja2 {
-    0%{}
-    
-    100%{
-        transform: translateZ(10px) perspective(200px);}
-    
-}
+

@@ -7,10 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="kontener">
-        <div class="anime" id="mlody"><img class="obrazek" id="jajco" src=mlodybartek.png></div>
-        <div class="anime" id="stary"><img class="obrazek" src=bartkestary.png></div>
-    </div>
     
+        <div id="container">
+            <div id="jeden"><div class="pole1"> szuszi z stonogi <br> szuszi z z pędraka <br>szuszi z chrabonszcza<br> majonez z jaj strusia <br></div></div>
+            <div id="dwa"><div class="pole2">czosnek z cebelom <br>gołąbki z mięsem gołebim <br>płetwa szprotki <br> sól z cukrem</div></div>
+        </div>
+        <div id="button">switch</div>
+    
+    
+    <script>
+
+        const button = document.querySelector('#button');
+        const jeden =document.querySelector('.pole1');
+        const dwa =document.querySelector('.pole2');
+        var checker =1;
+        button.addEventListener('click',event =>
+        {
+            
+            if(checker==1)
+            {
+                jeden.style.zIndex='110';
+                dwa.style.zIndex ='100';
+                jeden.style.animation = 'lewe 2s;';
+                dwa.style.animation = '';
+                checker=0;
+            }
+            if(checker==0)
+            {
+                jeden.style.zIndex='100';
+                dwa.style.zIndex='110';
+                jeden.style.animation = '';
+                dwa.style.animation = 'prawe 2s';
+                checker=1;
+            }
+            console.log(checker);
+            
+        });
+
+    </script>
 </body>
 </html>
