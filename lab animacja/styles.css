@@ -21,8 +21,8 @@ body
     position: absolute;
     background: aqua;
     left:35%;
-    animation: lewe 2s;
-    animation-fill-mode: forwards;
+    animation: lee 2s forwards;
+    
       z-index: 110;
     
 }
@@ -31,8 +31,8 @@ body
     position: absolute;
     background: lavender;
      
-    animation: praw 2s;
-    animation-fill-mode: forwards;
+    animation: praw 2s forwards;
+    
     z-index: 100;
     
 }

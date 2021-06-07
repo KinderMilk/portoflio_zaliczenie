@@ -28,17 +28,18 @@
             {
                 jeden.style.zIndex='110';
                 dwa.style.zIndex ='100';
-                jeden.style.animation = 'lewe 2s;';
-                dwa.style.animation = '';
+                jeden.style.animation = 'lewe 2s forwards';
+                dwa.style.animation = 'prawe 2s alternate';
                 
                checker = 0;
+               return;
             }
             if(checker === 0)
             {
                 jeden.style.zIndex='100';
                 dwa.style.zIndex='110';
-                jeden.style.animation = '';
-                dwa.style.animation = 'prawe 2s';
+                jeden.style.animation = 'lewe 2s alternate';
+                dwa.style.animation = 'prawe 2s forwards';
                 checker =1;
             }
             console.log(checker);
