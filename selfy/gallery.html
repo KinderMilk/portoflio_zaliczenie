@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <div id="all">
+    <div id="navigation">
+        <div id="logo"><img src="logo@2x.png"></div>
+            
+                
+                    <li id="link1" class="button" ><a href="index.html">Home</a></li>
+                    <li id="link2" class="button"><a href="#">About</a></li>
+                    <li id="link3" class="button"><a href="#">Styles</a></li>
+                    <li id="link4" class="button"><a href="gallery.html">Gallery</a></li>
+                    <li id="link5" class="button"><a href="#">Blog</a></li>
+                    <li id="link6" class="button"><a href="#">Contact</a></li>
+                    
+               
+            
+    </div>
+    <div id="gallery">
+        <div id="napisjakis">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda beatae dolore, natus voluptate quidem placeat eos sed ab, inventore omnis reiciendis doloremque facilis.</div>
+    
+        <div id=zdjecia>
+            <img src="2.png"  class="image">
+            <img src="2.png"  class="image">
+            <img src="2.png"  class="image">
+            <img src="2.png"  class="image">
+            <img src="2.png"  class="image">
+            <img src="2.png"  class="image">
+            <img src="2.png"  class="image">
+            <img src="2.png"  class="image">
+            
+
+        </div>
+    </div>
+    <div id="lightbox">
+        <img src="2.png"  id="limage">
+    </div>
+
+
+<script>
+    const image = document.querySelector('.image');
+    const light = document.querySelector('#lightbox');
+    image.addEventListener('click', ()=>{
+        light.style.display = "flex";
+
+    });
+    light.addEventListener('click', ()=>{
+        light.style.display = "none";
+    });
+
+</script>    
+</body>
+</html>
