@@ -4,6 +4,19 @@ body
     margin: 0;
     perspective: 400px;
 }
+#niewiem
+{
+    
+}
+#menu
+{
+    position: absolute;
+    width: 10vw;
+    background-color: aqua;
+    height: 100vh;
+    left:-100vh;
+    animation:none;
+}
 #container{
     
     height: 1000px;
@@ -11,7 +24,7 @@ body
     
     position: absolute ;
     background: red;
-    transform: translateZ() ;
+    transform: a; 
 }
 #nav
 {
@@ -20,4 +33,17 @@ body
     background-color: aquamarine;
     height: 100%;
 
+}
+.button
+{
+    font-size: 10vw;
+}
+@keyframes menunator {
+    from{left:-100vh;}
+    to{left:0;}
+}
+@keyframes odmenunator {
+    from{left: 0;}
+    to{left: -100vh;}
+    
 }

@@ -14,12 +14,14 @@
 <body>
     
    <div id="niewiem">
+       
     <div id="container">
-    <div id="button1" class="button">button</div> 
-    <div id="button2" class="button">button</div>     
+    <div id="button1" class="button">button_trapez</div> 
+    <div id="button2" class="button">button_menu</div>     
      
     
     </div>
+    <div id="menu">menu</div>
    </div>
     
     
@@ -29,10 +31,39 @@
 
         <script> 
         const button1 = document.querySelector('#button1');
+        const button2 = document.querySelector('#button2');
         const kontener = document.querySelector('#container');
                     button1.addEventListener('click', event =>{
-                    kontener.style.transform ='translateZ(-300px) rotateX(20deg)' ;
-                })
+                        if(kontener.style.transform =='translateZ(-300px) rotateX(20deg)')
+                        {
+                            kontener.style.transform ='';
+                            return;
+                        }
+                        if(kontener.style.transform ==''){
+                            kontener.style.transform ='translateZ(-300px) rotateX(20deg)' ;
+                             return;
+                        }
+                    });
+        const menu = document.querySelector('#menu');
+        var check=0;
+        button2.addEventListener('click' , event =>{
+            if(check==0){
+                menu.style.animation="menunator 1s forwards";
+                check=1;
+
+                return;
+            }
+            if(check==1){
+                menu.style.animation="menunator 1s forwards";
+                check=2;
+                return;
+            }
+            if(check=2){
+                menu.style.animation="odmenunator 1s forwards";
+                check=1
+                return;
+            }
+        });
         </script> 
 </body>
 </html>
