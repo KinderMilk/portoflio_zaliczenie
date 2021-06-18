@@ -2,6 +2,7 @@ body
 {
     padding: 0;
     margin: 0;
+    
 }
 a, a:hover, a:focus, a:active {
     text-decoration: none;
@@ -19,10 +20,19 @@ li{
 #navigation
 {
     background-color: #a5adb0;
-    border-bottom: 1.5px solid #cad2d7;
     display: grid;
-    grid-template-columns: 200px 1fr 100px 100px 100px 100px 100px 100px;
+    grid-template-columns:200px 1fr 600px ;
+    border-bottom: 1.5px solid #cad2d7;
+    
+    
+}
+#links
+{
+    grid-column-start:3 ;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
     padding-bottom: 30px;
+    
 }
 #logo img
 {
@@ -35,28 +45,28 @@ li{
 #link1
 {
     
-    grid-column-start:3;  
+    grid-column-start:1;  
    
 }
 #link2
 {   
-    grid-column-start:4;  
+    grid-column-start:2;  
 }
 #link3
 {   
-    grid-column-start:5;  
+    grid-column-start:3;  
 }
 #link4
 {  
-    grid-column-start:6;  
+    grid-column-start:4;  
 }
 #link5
 {  
-    grid-column-start:7;  
+    grid-column-start:5;  
 }
 #link6
 {   
-    grid-column-start:8;  
+    grid-column-start:6;  
 }
 .button 
 {
@@ -68,22 +78,35 @@ li{
 .button a
 {
     padding: 10px 25px;
-    background-color: antiquewhite;
+    background-color: #a5adb0;
+}
+.button a:hover
+{
+    animation: przycisk 1s forwards;
+}
+#kolor
+{
+    background-color:#ffc000 ;
 }
 
 .napisidiota
 {
     display: grid;
     align-items: center;   
+    height: 100vh;
     
     grid-template-columns: 50% 50%;
-    grid-template-rows:300px 8vw 4vw 4vw 40px 60px 300px ; 
+    grid-template-rows:10vh 100px 50px 40px 70px 10vh ; 
+}
+.napisidiota >p
+{
+    margin: 0;
 }
 #idiotaduzy
 {
 grid-row-start:2;grid-column-start: 1;
 font-family: 'Roboto', sans-serif;
-font-size: 7vw;
+font-size: 9vh;
 color: #fff;
 
 letter-spacing: -2px;
@@ -93,7 +116,7 @@ letter-spacing: -2px;
     grid-row-start:3;grid-column-start: 1;
     font-family: 'Roboto', sans-serif;
     color: #e2e2e2;
-    font-size: 2vw;
+    font-size: 3vh;
 }
 #idiotaosoba
 {
@@ -102,14 +125,14 @@ letter-spacing: -2px;
     font-family: 'Roboto', sans-serif;
     font-weight:bolder;
     color: #fff;
-    font-size: 2.5vw;
+    font-size: 3vh;
 }
 #idiotareklama
 {
     grid-row-start:6;
     grid-column-start: 1;
     font-family: 'Roboto', sans-serif;
-    color: #fff;font-size: 1.5vw;
+    color: #fff;font-size: 3vh;
 }
 
 #glowa
@@ -125,8 +148,9 @@ letter-spacing: -2px;
     display: grid;
     background-color: rgb(243, 244, 245);
     padding: 10vh;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
 }
+
 
 /*GALLERY*/
 #gallery
@@ -168,3 +192,36 @@ letter-spacing: -2px;
     display: none;
 }
 #limage{max-width: 60vw;}
+
+@keyframes przycisk {
+    from{
+        color: black;}
+    to{background-color: #4d4d4d ;
+        color: #fff;}
+    
+}
+
+@media only screen and (max-width:765px){
+    #opisy{
+    grid-auto-flow: row;        
+    }
+    
+}
+
+@media only screen and (max-width:1000px){
+#navigation{
+    grid-template-columns:200px 1fr ;
+}
+#links{
+    
+    background-color: #cad2d7;
+    grid-column-start: 2;    
+    display: flex;
+    flex-direction: column;
+
+}
+.button a{
+    background-color: #cad2d7;
+    border-bottom: 1.5px solid #a5adb0;
+}
+}
