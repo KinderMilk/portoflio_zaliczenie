@@ -115,3 +115,22 @@ grid-row-start:3 ;
     overflow-y: scroll;
 height: 100vh;
 }
+@media  only screen and (max-width:639px) {
+    #body
+    {   grid-template-rows: auto;
+        grid-template-columns: 100vw;}
+     #mails
+    {
+
+    height: 100vh;
+    overflow-y: visible;
+    }
+    #menu
+    {
+        height: 40vh;
+    }
+
+}
+@media  only screen and (max-width:1200) {
+    
+}
