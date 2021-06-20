@@ -45,6 +45,7 @@ color: white;
 }
 #labelsText
 {
+    padding-left: 9px;
     color: #989ca8;
     margin:0;
 }
@@ -104,33 +105,92 @@ grid-column-start:2 ;
 {
     grid-column-start:2 ;
     grid-row-start:2 ;
+    font-size: min(2vw, 20px);
+    font-weight: bold;
 }
 .tresc
 {
 grid-column-start:2 ;
 grid-row-start:3 ;
+font-size: min(1.5vw, 12px);
+
+
 }
 #opened
 {
     overflow-y: scroll;
-height: 100vh;
+    height: 100vh;
+    
 }
-@media  only screen and (max-width:639px) {
+#header
+{
+    display: grid;
+    grid-template-columns: 50vw  90px 90px 90px;
+    grid-template-rows: 50px 100px  ;
+    border-bottom: solid 1.3px #989ca8;
+}
+#nag{grid-column: 1; grid-row-start: 1;}
+#data{grid-row: 3;
+color:grey}
+.buttony 
+{
+    display: grid;
+border: solid 2px #989ca8;
+border-radius: 30px;
+justify-items: center;
+
+}
+#buttoneONE
+{
+    grid-column-start: 2; grid-row-start: 2;
+
+}
+#buttoneTWO
+{
+    grid-column-start: 3; grid-row-start: 2;
+}
+#buttoneTHREE
+{
+    grid-column-start: 4; grid-row-start: 2;
+
+}
+@media only screen and (max-width:1200) and (min-width:640px)  {
+    #body
+    {
+        display: grid;
+        grid-template-columns:100px 1fr ;
+        grid-template-rows:20vh 1fr ;
+    }
+    #menu
+    {
+        grid-column-start: 1;
+        grid-row: 0/3 ;
+    }
+    
+}
+@media only screen and (max-width:639px) {
     #body
     {   grid-template-rows: auto;
         grid-template-columns: 100vw;}
      #mails
     {
 
-    height: 100vh;
+    height: 800px;
     overflow-y: visible;
     }
     #menu
     {
-        height: 40vh;
+        height: 350px;
     }
-
+    .tresc
+    {
+        font-size: max(3vw, 12px);   
+        padding-right: 5px;   
+    }
+    .title
+{
+    font-size: max(3vw, 12px);  
 }
-@media  only screen and (max-width:1200) {
-    
+
+
 }
