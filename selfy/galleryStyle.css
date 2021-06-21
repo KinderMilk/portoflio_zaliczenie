@@ -3,6 +3,7 @@ body
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     
 }
 a, a:hover, a:focus, a:active {
@@ -15,12 +16,12 @@ li{
 #all
 {
     padding: 10vh 5vh 0vh 5vh ;
-    background-color: #a5adb0;
+    background-color: #f3f4f5;
     
 }
 #navigation
 {
-    background-color: #a5adb0;
+    background-color: #f3f4f5;
     display: grid;
     grid-template-columns:200px 1fr 600px ;
     border-bottom: 1.5px solid #cad2d7;
@@ -79,7 +80,7 @@ li{
 .button a
 {
     padding: 10px 25px;
-    background-color: #a5adb0;
+    background-color: #f3f4f5;
 }
 .button a:hover
 {
@@ -92,66 +93,19 @@ li{
     color: #f3f4f5;
 }
 
-.napisidiota
+.gallery
 {
+    margin-top: 20px;
     display: grid;
-    align-items: center;   
-    height: 100vh;
-    
-    grid-template-columns: 50% 50%;
-    grid-template-rows:10vh 100px 50px 40px 70px 10vh ; 
+    grid-template-columns: 40% 60% ;
 }
-.napisidiota >p
+#napisjakis
 {
-    margin: 0;
+grid-column: 1;
 }
-#idiotaduzy
+.naglowki
 {
-grid-row-start:2;grid-column-start: 1;
-font-family: 'Roboto', sans-serif;
-font-size: 9vh;
-color: #fff;
-
-letter-spacing: -2px;
-}
-#idiotanapis
-{
-    grid-row-start:3;grid-column-start: 1;
-    font-family: 'Roboto', sans-serif;
-    color: #e2e2e2;
-    font-size: 3vh;
-}
-#idiotaosoba
-{
-    grid-row-start:4;
-    grid-column-start: 1;
-    font-family: 'Roboto', sans-serif;
-    font-weight:bolder;
-    color: #fff;
-    font-size: 3vh;
-}
-#idiotareklama
-{
-    grid-row-start:6;
-    grid-column-start: 1;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;font-size: 3vh;
-}
-
-#glowa
-{
-    object-fit: cover;
-   grid-row-start:2 ;
-   grid-column-start: 1;
-   width: 50px;
-    
-}
-#opisy
-{
-    display: grid;
-    background-color: #f3f4f5;
-    padding: 10vh;
-    grid-auto-flow: column;
+    grid-column: 1;
 }
 .naglowki::after
 {
@@ -165,19 +119,9 @@ padding-left: 3px;
 
 
 }
-
-/*GALLERY*/
-#gallery
-{
-    display: grid;
-    grid-template-columns: 30% 1fr;
-}
-#napisjakis
-{
-
-}
 #zdjecia
 {
+    grid-column: 2;
     display: grid;
     
     row-gap: 20px;
@@ -185,7 +129,8 @@ padding-left: 3px;
 }
 .image
 {
-    width: 12em;
+    width: 340px;
+    border: solid 5px #fff;
 }
 .image:hover
 {
@@ -207,6 +152,7 @@ padding-left: 3px;
 }
 #limage{max-width: 60vw;}
 
+
 @keyframes przycisk {
     from{
         color: black;}
@@ -215,32 +161,74 @@ padding-left: 3px;
     
 }
 
+
+@media only screen and (max-width:1400px){
+    .image
+{
+width: 230px;
+
+}
+    
+}
+@media only screen and (max-width:1000px){
+    #navigation{
+        grid-template-columns:200px 1fr ;
+    }
+    #links{
+        
+       
+        grid-column-start: 2;    
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .button a{
+    
+        border-bottom: 1.5px solid #a5adb0;
+    }
+
+    .gallery
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    #zdjecia
+    {
+        display:flex ;
+    flex-direction: column;
+    align-items: center;
+    }
+    #zdjecia2
+    {
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+    }
+    #zdjecia3
+    {
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+        .image
+        {
+            width: 70vw;
+        }
+
+}
 @media only screen and (max-width:850px){
     #opisy{
     grid-auto-flow: row;        
     }
     #all
-    {
-        padding: 10vh 0 10vh 10px ;
-        
-    }
+{
+    padding: 10vh 0 10vh 10px ;
     
 }
 
-@media only screen and (max-width:1000px){
-#navigation{
-    grid-template-columns:200px 1fr ;
-}
-#links{
-    
-    
-    grid-column-start: 2;    
-    display: flex;
-    flex-direction: column;
 
-}
-.button a{
-    
-    border-bottom: 1.5px solid #a5adb0;
-}
+
+
 }
