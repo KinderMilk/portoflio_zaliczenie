@@ -114,14 +114,33 @@ h1.naglowki
    
     display: grid;
     grid-template-columns: 60vw 20vw;
-    border-bottom: solid 1.5px #cad2d7;
+    
+   
+}
+#nagloowki{ border-right: solid 1.5px #cad2d7;
 }
 .sidebar{
+    margin-left: 20px;
     grid-column: 2;
-    border-left: solid 1.5px #cad2d7;
+   
 }
-
+.lewa
+{
+    grid-template-columns: 1;
+}
 #sidebarimage
 {
     width: 180px;
 }
+#rules
+{
+    border-bottom: solid 1.5px #cad2d7;
+}
+#headerbutton
+{
+    border-top: dotted 1.5px #cad2d7;
+    
+}
+.Mbutton{}
+.Sbutton{}
+.XSbutton{}
