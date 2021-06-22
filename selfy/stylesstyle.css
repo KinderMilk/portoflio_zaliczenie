@@ -220,6 +220,11 @@ color: #fff;
         flex-direction: column;
     
     }
+    #all
+    {
+        padding: 10vh 0 10vh 10px ;
+        
+    }
     .button a{
         
         border-bottom: 1.5px solid #a5adb0;

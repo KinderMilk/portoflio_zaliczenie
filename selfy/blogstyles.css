@@ -125,3 +125,25 @@ grid-template-columns: 30% 65%;
 }
 .splitted h1{grid-rows:0 ;}
 
+@media only screen and (max-width:1000px){
+    #navigation{
+        grid-template-columns:200px 1fr ;
+    }
+    #links{
+        
+        
+        grid-column-start: 2;    
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #all
+    {
+        padding: 10vh 0 10vh 10px ;
+        
+    }
+    .button a{
+        
+        border-bottom: 1.5px solid #a5adb0;
+    }
+    }
