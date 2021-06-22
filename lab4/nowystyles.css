@@ -206,6 +206,8 @@ justify-items: center;
 {
     font-size: max(3vw, 12px);  
 }
+#nag{font-size: 23px;}
+.buttony{font-size: 10px;}
 
 
 }

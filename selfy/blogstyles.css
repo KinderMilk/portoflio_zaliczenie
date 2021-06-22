@@ -1,0 +1,95 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type: none;
+}
+#all
+{
+    padding: 10vh 5vh 0vh 5vh ;
+    background-color: #f3f4f5;
+    
+}
+#navigation
+{
+    background-color: #f3f4f5;
+    display: grid;
+    grid-template-columns:200px 1fr 600px ;
+    border-bottom: 1.5px solid #cad2d7;
+    
+    
+}
+#links
+{
+    grid-column-start:3 ;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    padding-bottom: 30px;
+    
+}
+#logo img
+{
+   
+    width: 150px;
+    height: auto;
+    grid-column-start:1; 
+    
+}
+#link1
+{
+    
+    grid-column-start:1;  
+   
+}
+#link2
+{   
+    grid-column-start:2;  
+}
+#link3
+{   
+    grid-column-start:3;  
+}
+#link4
+{  
+    grid-column-start:4;  
+}
+#link5
+{  
+    grid-column-start:5;  
+}
+#link6
+{   
+    grid-column-start:6;  
+}
+.button 
+{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+   
+}
+.button a
+{
+    padding: 10px 25px;
+    background-color: #f3f4f5;
+}
+.button a:hover
+{
+    animation: przycisk 1s forwards;
+}
+#kolor
+{
+    background-color:#ffc000 ;
+    border-radius: 10px;
+    color: #f3f4f5;
+}
+
