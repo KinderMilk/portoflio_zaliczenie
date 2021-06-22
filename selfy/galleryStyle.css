@@ -151,7 +151,12 @@ padding-left: 3px;
     display: none;
 }
 #limage{max-width: 60vw;}
+.bigPhoto
+{
+    width: 45vw;
+    border: solid 5px #fff;
 
+}
 
 @keyframes przycisk {
     from{
