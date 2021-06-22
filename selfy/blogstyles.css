@@ -92,4 +92,36 @@ li{
     border-radius: 10px;
     color: #f3f4f5;
 }
+.naglowki::after
+{
+    
+    content:"." ;
+    color: #ffc000;
+    font-size: 56px;
+    position: relative;
+    padding-left: 3px;
+   
+
+
+}
+.splitted
+{
+display: grid;
+grid-template-columns: 30% 65%;
+
+}
+.image
+{
+    grid-row-start: 4;
+    
+    grid-column: 2;
+    object-fit: cover;
+    width: 90%;
+    max-height: 90%;
+}
+.splitted > h1,p,i
+{
+    grid-column: 1;
+}
+.splitted h1{grid-rows:0 ;}
 
