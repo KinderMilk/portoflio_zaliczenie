@@ -92,6 +92,28 @@ li{
     border-radius: 10px;
     color: #f3f4f5;
 }
+.naglowki::after
+{
+    
+    content:"." ;
+    color: #ffc000;
+    font-size: 56px;
+    position: relative;
+    padding-left: 3px;
+   
+
+
+}
+
+.buttonn{width: 150px;}
+.buttonn > p
+{
+    padding: 7px 15px;
+    background-color: #ffc000;
+    color: #f3f4f5;
+    
+
+}
 
 @media only screen and (max-width:1000px){
     #navigation{

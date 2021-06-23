@@ -215,6 +215,7 @@ grid-column: 1;
 .tabelka > td,th
 {
     padding: 10px 50px;
+    
 }
 .tabelka tr:nth-child(2n)
 {
