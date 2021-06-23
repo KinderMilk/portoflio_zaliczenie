@@ -158,6 +158,12 @@ padding-left: 3px;
 
 }
 .bigPhoto:hover{opacity: 50%;}
+.footer
+{
+    border-top: solid 1.5px #a5adb0;
+    margin-top: 150px;
+    text-align: center;
+}
 
 @keyframes przycisk {
     from{

@@ -227,6 +227,13 @@ grid-column: 1;
 }
 
 
+.footer
+{
+    border-top: solid 1.5px #a5adb0;
+    margin-top: 150px;
+    text-align: center;
+}
+
 
 
 

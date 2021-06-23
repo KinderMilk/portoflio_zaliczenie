@@ -131,6 +131,14 @@ li{
     justify-content: space-between;
 }
 
+
+.footer
+{
+    border-top: solid 1.5px #a5adb0;
+    margin-top: 150px;
+    text-align: center;
+}
+
 @media only screen and (max-width:1000px){
     #navigation{
         grid-template-columns:200px 1fr ;

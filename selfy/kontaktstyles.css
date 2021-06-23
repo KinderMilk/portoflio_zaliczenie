@@ -114,6 +114,29 @@ li{
     
 
 }
+.canvas
+{
+    display: grid;
+    grid-template-columns: 60% 20%;
+    
+}
+#sidebar
+{
+    grid-column: 2;
+    margin-left: 100px;
+    margin-top: 30px;
+    border-left: solid 1.5px #a5adb0;
+}
+.left {
+    grid-column: 1;
+   
+}
+.footer
+{
+    border-top: solid 1.5px #a5adb0;
+    margin-top: 150px;
+    text-align: center;
+}
 
 @media only screen and (max-width:1000px){
     #navigation{
