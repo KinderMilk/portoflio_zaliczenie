@@ -157,6 +157,7 @@ padding-left: 3px;
     border: solid 5px #fff;
 
 }
+.bigPhoto:hover{opacity: 50%;}
 
 @keyframes przycisk {
     from{

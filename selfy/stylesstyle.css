@@ -192,9 +192,38 @@ color: #fff;
     width: 200px;
 }
 
+.obrazki > img:hover
+{
+    opacity: 50%;
+}
+#sidebarimage:hover
+{
+    opacity: 50%;
+}
 
-
-
+#tablestyle
+{
+    padding-top: 20px;
+    border-top: solid 1.5px #a5adb0;
+grid-column: 1;
+}
+.tabelka
+{
+    background-color: #a5adb0;
+    
+}
+.tabelka > td,th
+{
+    padding: 10px 50px;
+}
+.tabelka tr:nth-child(2n)
+{
+    background-color: #cad2d7;
+}
+#tabelkatytul
+{
+    background-color: #cad2d7;
+}
 
 
 

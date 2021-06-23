@@ -124,6 +124,7 @@ grid-template-columns: 30% 65%;
     grid-column: 1;
 }
 .splitted h1{grid-rows:0 ;}
+.image:hover{opacity: 50%;}
 
 @media only screen and (max-width:1000px){
     #navigation{
